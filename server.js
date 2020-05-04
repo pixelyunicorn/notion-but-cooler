@@ -1,4 +1,4 @@
-// code below forked from this google doc for hosting on glitch / nodejs:
+// code below forked from this google doc for hosting on nodejs / glitch:
 // https://docs.google.com/document/d/1pJ0Qeuqblp7NYQn3fhFttJKfXsdCuzkAoLnWqLBCjd8/edit
 
 const express = require("express");

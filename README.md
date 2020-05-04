@@ -2,19 +2,11 @@
 
 Host Notion on your own domain, with custom scripts & styling! (Not created or maintained by Notion.)
 
-Code forked from [this Google Doc](https://docs.google.com/document/d/1pJ0Qeuqblp7NYQn3fhFttJKfXsdCuzkAoLnWqLBCjd8/edit) for hosting on Glitch!
+Last updated on May 4, see `CHANGELOG.md`. Pull requests welcome on [Github](https://github.com/pixelyunicorn/notion-but-cooler)!
 
 **Disclaimer: This is a very hacky method that could break at any time.** Customize Notion at your own risk, and enjoy it while it still works!
 
-(Last updated May 4, scroll down for the changelog. Pull requests welcome on [Github](https://github.com/pixelyunicorn/notion-but-cooler)!)
-
-## Examples 🖼
-
-If you want inspiration, here are some styled Notion pages remixed from this project:
-
-- Melody's Notion Page: [notion.melody.dev](https://notion.melody.dev) / [style.css](https://glitch.com/edit/#!/melody-notion?path=public%2Fstyle.css)
-
-## How to Setup Your Project 👋
+## How to Setup Your Notion Page 👋
 
 1. Remix this project!
 1. Open up the Glitch editor, click the dropdown in the top left corner, and rename your project!
@@ -68,19 +60,14 @@ To add a custom domain on Glitch, you need to have 2 thanks from people. Alterna
 - You may be able to access the Notion login or home but you can't actually login.
 - Inline database titles may not follow your font settings.
 
-## Changelog 🆕
+## Examples 🖼
 
-**style.css**
+If you want inspiration, here are some styled Notion pages remixed from this project:
 
-- Minor Update #1 on May 3, 2020: fixed code for frosted topbar on dark mode
-- Minor Update #2 on May 4, 2020: added some more blank selectors for editor sidebars (for theming desktop app)
-
-**server.js**
-
-- Nothing here yet!
+- Melody's Notion Page: [notion.melody.dev](https://notion.melody.dev) / [style.css](https://glitch.com/edit/#!/melody-notion?path=public%2Fstyle.css)
 
 ## Made by Melody ✨
 
-Original project can be found at [glitch.com/~notion](https://glitch.com/~notion).
+The original project can be found at [glitch.com/~notion](https://glitch.com/~notion).
 
 You can find me online at [melody.dev](https://melody.dev) or [@pixelyunicorn](https://twitter.com/pixelyunicorn).
