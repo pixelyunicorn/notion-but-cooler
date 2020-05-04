@@ -1,0 +1,155 @@
+/* this file is styles your notion :) */
+/* if you're overriding inline styles, add !important */
+/* looking for inspiration? see melody's CSS: */
+/* https://glitch.com/edit/#!/melody-notion?path=public%2Fstyle.css */
+
+/* body font */
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/* header font */
+.notion-header-block *,
+.notion-sub_header-block *,
+.notion-scroller .notion-page-block[style*="cursor: text"] *,
+.notion-scroller .notion-collection_view-block[style*="cursor: text"] * {
+  font-family: "Playfair Display", serif;
+}
+
+/* non-header page title fonts (topbar, boards, calendar) */
+.notion-topbar *,
+.notion-page-block.notion-collection-item > a > div > div > div,
+.notion-page-block.notion-collection-item > a > div > div > div > div {
+  font-family: "Lato", sans-serif;
+}
+
+/* monospace font */
+pre *,
+code *,
+.notion-page-content[style*="iawriter-mono"] * {
+  font-family: "Space Mono", monospace;
+}
+
+/* light mode (default) colours */
+body,
+body.notion-body .notion-cursor-listener,
+.notion-app-inner.notion-light-theme .notion-frame,
+.notion-app-inner.notion-light-theme
+  .notion-board-view
+  > div:first-of-type
+  > div,
+.notion-app-inner.notion-light-theme
+  .notion-board-view
+  > div:first-of-type
+  > div
+  > div:last-of-type {
+  background: #f2f2f2 !important;
+}
+
+/* dark mode colours */
+body.notion-body.dark .notion-cursor-listener,
+.notion-app-inner.notion-dark-theme .notion-frame,
+.notion-app-inner.notion-dark-theme
+  .notion-board-view
+  > div:first-of-type
+  > div,
+.notion-app-inner.notion-dark-theme
+  .notion-board-view
+  > div:first-of-type
+  > div
+  > div:last-of-type {
+  background: #331e3e !important;
+}
+
+/* editor sidebars */
+.notion-light-theme .notion-sidebar { 
+}
+.notion-dark-theme .notion-sidebar { 
+}
+
+/* hide notion button in top right corner */
+.notion-topbar > div:last-of-type > div[role="button"]:last-of-type,
+.notion-topbar div[style*="width: 1px"] {
+  display: none !important;
+}
+
+/*  fix for calendar & boards on custom backgrounds */
+.notion-board-view > div:first-of-type > div,
+.notion-board-view > div:first-of-type > div > div:last-of-type {
+  box-shadow: none !important;
+}
+.notion-calendar-view > div:first-of-type > div:first-of-type {
+  box-shadow: rgba(55, 53, 47, 0.16) 0px 1px 0px inset,
+    rgba(55, 53, 47, 0.16) 1px 0px 0px inset,
+    rgba(55, 53, 47, 0.16) -1px 0px 0px inset !important;
+}
+
+/* page title */
+.notion-scroller .notion-page-block[style*="cursor: text"] *,
+.notion-scroller .notion-collection_view-block[style*="cursor: text"] * {
+}
+
+/* callout blocks */
+.notion-callout-block > div > div {
+}
+
+/* horizontal rules */
+.notion-divider-block > div > div {
+}
+
+/* top bar */
+.notion-topbar {
+}
+
+/* overlay top bar */
+.notion-peek-renderer div[style*="height: 45px"] {
+}
+
+/* frosted top bar */
+.notion-frame > .notion-scroller {
+  margin-top: -45px;
+  padding-top: 45px;
+}
+
+.notion-topbar {
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
+}
+
+.notion-light-theme .notion-topbar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #88888888;
+}
+
+.notion-dark-theme .notion-topbar {
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+/* calendar item background colour hack */
+/* the bottom-most visible property must be a select or multi-select */
+/* the first tag will be the item's background colour */
+/* (this might not work) */
+
+/*
+.notion-calendar-view .notion-page-block.notion-collection-item > a {
+  position: relative;
+}
+
+.notion-calendar-view
+  .notion-page-block.notion-collection-item
+  > a
+  > div
+  > div:last-of-type
+  > div
+  > div
+  > div:first-of-type:after {
+  content: " ";
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  opacity: 0.5;
+}
+ */
