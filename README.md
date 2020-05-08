@@ -2,7 +2,7 @@
 
 Host Notion on your own domain, with custom scripts & styling! (Not created or maintained by Notion.)
 
-Last updated on May 4, see `CHANGELOG.md`. Pull requests welcome on [Github](https://github.com/pixelyunicorn/notion-but-cooler)!
+Last updated on May 8, see `CHANGELOG.md`. Pull requests welcome on [Github](https://github.com/pixelyunicorn/notion-but-cooler)!
 
 **Disclaimer: This is a very hacky method that could break at any time.** Customize Notion at your own risk, and enjoy it while it still works!
 

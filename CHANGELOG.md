@@ -1,5 +1,8 @@
 ## Changelog 🆕
 
+- **Major Update #4 on May 8, 2020:**
+  - server.js: Fix path of Notion JS files!
+  - To upgrade, copy and paste server.js from line 73 and downwards!
 - Minor Update #3 on May 4, 2020:
   - [Created a GitHub for pull requests!](https://github.com/pixelyunicorn/notion-but-cooler)
   - README.md: cleaned up documentation a bit

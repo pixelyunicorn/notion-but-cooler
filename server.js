@@ -2,10 +2,8 @@
 // https://docs.google.com/document/d/1pJ0Qeuqblp7NYQn3fhFttJKfXsdCuzkAoLnWqLBCjd8/edit
 
 const express = require("express");
-const http = require("http");
 const events = require("events");
 const fetch = require("node-fetch");
-const fs = require("fs");
 const app = express();
 var eventEmitter = new events.EventEmitter();
 
@@ -84,7 +82,7 @@ app.all("*", function(request, response) {
       response.redirect(301, `https://www.notion.so${url}`);
     } else if (url.startsWith("/front")) {
       response.redirect(301, `https://www.notion.so${url}`);
-    } else if (url.startsWith("/app") && url.endsWith("js")) {
+    } else if (url.endsWith("js")) {
       response.type("application/x-javascript");
       res = await fetch(`https://www.notion.so${url}`);
       body = await res.text();
@@ -96,7 +94,7 @@ app.all("*", function(request, response) {
       } catch (err) {
         console.log(err);
       }
-    } else if (url.startsWith("/app") && url.endsWith("css")) {
+    } else if (url.endsWith("css")) {
       response.type("text/css");
       res = await fetch(`https://www.notion.so${url}`);
       body = await res.text();
